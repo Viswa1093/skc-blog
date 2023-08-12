@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+body{
+    font-family: cursive;
+    background-color:rgb(166, 183, 201);
+}
+.login h3{
+    font-size: 43px;
+    font-family:cursive;
+    color:rgb(27, 10, 73);
+}
+b{
+    font-size:21px;
+}
+.block h3{
+    margin-left:5px;
+    font-size: 35px;
+    font-family:cursive;
+    color:rgb(7, 7, 65);
+    margin:0;
+}   
+.block b{
+    font-size:18px;
+}
+.block hr{
+    background-color:rgb(4, 105, 105);
+}
+.login button,.aa{
+
+    background-color:rgb(179, 72, 173);
+    width:20%;
+    padding:15px;
+    color:beige;
+    font-size: large;
+    font-weight: 700;
+    margin:10px 0px;
+    cursor:pointer;
+    border-color:white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+td{
+    font-weight: 700;
+    font-size: 18px;
+    font-family:cursive;
+    text-align: left;
+    padding:5px 0px;
+}
+ input[type=email], input[type=number],input[type=text]{
+
+        width:80%;
+        padding:13px;
+        margin:8px 0px;
+        font-family:cursive;
+        font-size: 16px;
+}
+textarea{
+    width:170%;
+    height:160px;
+    margin:8px 0px;
+    padding:8px;
+    font-size:17px;
+    font-family: cursive;
+}
+
+.whole{
+    width:100%;
+
+}
+.clue{
+    font-size:18px;
+    color:rgb(241, 5, 5);
+}
+.block button:hover{
+     scale: 1.1;
+}
+#space{
+    margin:5px;
+}
+#can{
+    margin-left:8px;
+}
+u{
+    color:green;
+}
+.block{
+    width:50%;
+    margin-top:1px;
+    margin-left:20px;
+    border-style:groove;
+    border-color:rgb(179, 72, 173);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.block img{
+    float:right;
+}
+
+.box{
+    width:95%;
+    margin-top:25px;
+    margin-left:25px;
+    padding:8px;
+    border-style:groove;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: rgb(179, 72, 173);
+}
+.img img{
+    float:right;
+}
+.img .logo{
+    margin-top:-955px;
+    margin-right:720px;
+}
+.img .side{
+    margin-top:-970px;
+    margin-right: 30px;
+    float:right;
+}
+.login{
+width:700px;
+padding: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border-color: blue;
+}
+.login a{
+    color:rgb(4, 136, 81);
+    font-size: 21px;
+    font-weight:bold;
+    font-family: cursive;
+    text-decoration:none;
+}
+.h{
+    margin-top:-10px;
+}
+.con{
+    float:right;
+    width:444px;
+    padding:30px 20px;
+    border:3px solid;
+    margin-top: -540px;
+    margin-right:25px;
+    border-radius: 15px;
+   
+}
+.con label{
+    font-size: 20px;
+    color:blueviolet;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <script src="js/blogfun.js" type="text/javascript"></script>
+    <form method="post" action="http://localhost/BLOG/uploading.php" enctype="multipart/form-data">
+        <div class="box">
+        <div class="login" style="padding:10px; background-color:white;" height="100px" width="50%">
+            <h3 align="left">To Contact Us</h3>
+            <b class="h">Enter the Details of Yours and We will Contact you Soon :</b><br><br><hr><br>
+                <table width="100%">
+                    <tr>
+                    <td><b>First Name</b>
+                    <input type="text" id="FN" name="FN" placeholder="Enter First Name" required/></td>
+                    <td><b>Last Name</b>
+                        <input type="text" id="LN" name="LN" placeholder="Enter Last name" required/></td>
+                    </tr>
+                    <tr>
+                        <td><b>E-mail ID</b>
+                        <input type="email" id="mail" name="mail" placeholder="Enter Email ID" required/></td>
+                        <td><b>City</b><br>
+                            <input type="text" id="city"  name="city"placeholder="Enter City Name" required/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Mobile Number</b>
+                            <input type="number" id="mob" name="mob" placeholder="Mobile Number" required/></td>
+                            <td><b>Subject</b>
+                                <input type="text" id="subj" name="subj" placeholder="Enter Subject" required/></td>
+                        </tr>
+                        <tr>
+                            <td><b>Reason</b>
+                                <textarea id="reason" name="reason" required></textarea>
+                            </tr>
+                        </table><br>
+            <hr><br>
+            
+            <input class="aa"type="submit" name="contact" value="Response"/>
+            <button id="can" type="reset" id="cancel">Clear</button><br><br>
+
+        </div>
+    </form>
+        <div class="img">
+            <img class="logo" src="images/deptlogo.jpg" height="85px" width="95px">
+                 <iframe  class="side" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.934005305223!2d77.833456!3d9.5144635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06cefaaaaaaaab%3A0x7950cd841f0a4567!2sSri%20Kaliswari%20College!5e0!3m2!1sen!2sin!4v1687355953315!5m2!1sen!2sin" width="520" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 <div class="con">
+                    <label>Address</label>
+                    <h3><i class="bi-geo-alt"></i>   Virudhunagar Main Road, Anaikuttam
+                        Sivakasi – 626 130</h3>
+                        <label>Contact Number</label>
+                    <h3><i class="bi-telephone"></i>  (+91) 9487487825</h3>
+                    <label>Mail Address</label>
+                    <h3><i class="bi-chat-left"></i>  srikaliswaricollege@gmail.com</h3>
+                    <label>Time to Meet</label>
+                    <h3><i class="bi-alarm"></i>  Mon-Sat, 10AM - 4.00PM</h3>
+                </div>
+        </div>
+       
+      </div>
+    
+
+
+
+    <!--
+    <div class="whole">
+        <div class="block" style="padding:25px; background-color:white;" height="100px" width="50%">
+            <h3 align="left">To Contact Us</h3><br>
+            <b>Enter the Details of Yours and We will Contact you Soon :</b><br><br><hr><br>
+            <form>
+                <table width="100%">
+                    <tr>
+                    <td>First Name
+                    <input type="text" id="FN" placeholder="Enter First Name" required/></td>
+                    <td>Last Name
+                        <input type="text" id="LN" placeholder="Enter Last name" required/></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail ID
+                        <input type="email" id="mail" placeholder="Enter Email ID" required/></td>
+                        <td>City<br>
+                            <input type="text" id="city" placeholder="Enter City Name" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number
+                            <input type="number" id="mob" placeholder="Mobile Number" required/></td>
+                            <td>Subject
+                                <input type="text" id="subj" placeholder="Enter Subject" required/></td>
+                        </tr>
+                        <tr>
+                            <td>Reason
+                                <textarea></textarea>
+                            </tr>
+                        </table><br>
+            <hr><br>
+            
+            <button type="submit">Response</button>
+            <button id="can" type="reset" id="cancel">Clear</button><br><br>
+            <img class="logo" src="logo.png" height="85px" width="95px">
+        </div>
+    </form>
+    <br>
+</div>-->
+</body>
+</html>
